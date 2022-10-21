@@ -1,20 +1,11 @@
 <template>
     <div class="login container column is-4">
+    <h3 class="title is-align-self-center">Test App</h3>
         <div class="field">
-            <p class="control has-icons-left has-icons-right">
                 <input class="input" type="text" placeholder="Name" v-model="userName" required>
-                <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                </span>
-            </p>
         </div>
         <div class="field">
-            <p class="control has-icons-left">
                 <input class="input" type="password" placeholder="Password" v-model="userPassword" required>
-                <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                </span>
-            </p>
         </div>
         <div class="field">
             <p class="control">
