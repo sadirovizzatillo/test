@@ -19,11 +19,13 @@ npm run build
 ```
 npm run lint
 ```
+### To install npm
+```
+npm install
+```
 ### To run the db.json
 ```
-
 json-server --watch db.json
 ```
-
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
