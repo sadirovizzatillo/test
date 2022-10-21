@@ -21,9 +21,9 @@ const adddate = ref(null)
 const adddistance = ref(null)
 
 const addData = () => {
-  // if([name.value, quantity.value, date.value, distance.value].includes("")){
-    //   return
-    // }else{
+  if([addname.value, addquantity.value, adddate.value, adddistance.value].includes("")){
+      return
+    }else{
       const form = {
         name: addname.value,
         quantity: addquantity.value,
@@ -33,8 +33,7 @@ const addData = () => {
       store.dispatch("addData", form)
       router.push({ name: "main"})
     }
-    
-    // }
+}
   </script>
   
   <style scoped>
