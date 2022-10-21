@@ -82,6 +82,7 @@ const modalItem = (bool) => {
     if(deleteModal.value === true){
       store.dispatch("deleteData", deleteId.value)
       modal.value = false
+      deleteModal.value = false
       return
     }
     const form = {
@@ -93,6 +94,7 @@ const modalItem = (bool) => {
     }
     store.dispatch("changeData", form)
     modal.value = false
+    editModal.value = false
   }
 }
 

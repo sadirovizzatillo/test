@@ -1,6 +1,5 @@
 <template>
-    
-    <div class="container column is-4">
+    <div class="login container column is-4">
         <div class="field">
             <p class="control has-icons-left has-icons-right">
                 <input class="input" type="text" placeholder="Name" v-model="userName" required>
@@ -58,3 +57,14 @@ const saveUser = async () => {
     await router.push("/")
 }
 </script>
+
+
+<style scoped>
+.login{
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+</style>
